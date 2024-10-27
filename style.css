@@ -72,6 +72,19 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: fade 1s ease-in forwards;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 img {
@@ -159,3 +172,68 @@ button.yt {
     margin-left: -5vw;
 }
 
+@media (max-width: 600px) {
+    .profile_card{
+        display: ;
+    }
+    .info_box{
+        position: relative;
+        height: 50vw;
+        width: 100vw;
+        /* justify-content: center;
+        align-items: center; */
+        margin-top: 135vw;
+        font-size: 9vw;
+        margin-left: -29vw;
+        /* margin-right: 20vw; */
+        /* background-color: aqua; */
+    }
+    h1.b{
+        margin-left: 15vw;
+        margin-top: -4vw;
+    }
+    .text{
+        font-size: 5vw;
+        margin-left: 5vw;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        height: 80vw;
+        margin-top:2vw;
+    }
+    img{
+        margin-left: 19vw;
+        margin-top: -20vw;
+        height: 75vw;
+        width: 55vw;
+        object-fit: cover;
+        border-radius: 1vw;
+    }
+    .nav_bar{
+        height: 5vw;
+        /* font-size: 7%; */
+
+    }
+    button{
+        font-size: 4vw;
+
+    }
+    .am{
+        margin-left: 33vw;
+        margin-top: -15vw;
+    }
+    
+    #b2{
+        margin-top: -6vw;
+        margin-left: 17vw;
+    }
+    button.yt{
+        margin-top: 75vw;
+        height: 4vw;
+        width: 6vw;
+
+    }
+}
